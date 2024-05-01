@@ -27,7 +27,7 @@ function Filtered() {
                 }
             })
             .catch(err => console.log(err));
-    }, [curPage, check]);
+    }, [curPage, check, url, redirectBack]);
     return (
         <div>
             <div className="search-bar">
