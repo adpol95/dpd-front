@@ -1,59 +1,108 @@
+@import "./assets/styles/users.css";
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul button,
+.search-bar button {
+    border: none;
+    background: #dc0032;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    color: white;
+    padding: .5em 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background: white;
+    color: #dc0032;
+}
+
+.App,
+button,
+input,
+table {
+    font-family: "Gotham SSm A", "Gotham SSm B", Verdana, Helvetica, Arial, sans-serif;
+    @media (max-width: 810px) {
+        font-size: .635em;
+    }
+    @media (min-width: 810.2px) {
+        font-size: .98em;
+    }
+}
+
 .loader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: red;
-  height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #dc0032;
 }
 
 .lds-ring {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding-top: 40em;
 }
 
 .lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: red transparent transparent transparent;
-  &:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  &:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  &:nth-child(3) {
-    animation-delay: -0.15s;
-  }
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #dc0032 transparent transparent transparent;
+
+    &:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+
+    &:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: -0.15s;
+    }
 
 }
 
 @keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 table {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+

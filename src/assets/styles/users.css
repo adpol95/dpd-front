@@ -1,0 +1,58 @@
+.clients {
+    text-align: center;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .4);
+    border-collapse: collapse;
+}
+table,
+thead,
+tbody,
+th,
+td {
+    border: #dc0032 solid 1px;
+
+}
+th button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 1px;
+    min-height: 1px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 2px;
+}
+th,
+td {
+    position: relative;
+    padding: .5em 1em;
+    text-align: center;
+}
+
+.pagination-block {
+    display: flex;
+    justify-content: center;
+    column-gap: .5em;
+    align-items: center;
+}
+
+.search-bar {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+}
+.search-bar input {
+    font-size: 1.1em;
+    color: #dc0032;
+    text-align: center;
+    height: 1.3em;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}

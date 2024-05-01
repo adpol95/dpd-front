@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter} from "react-router-dom";
 import {RouterProvider} from "react-router";
-import Filtered from "./Filtered";
+import Filtered from "./components/Filtered";
+import Main from "./components/Main";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <App/>,
         children: [
+            {
+                path: "/",
+                element: <Main/>
+            },
             {
                 path: ":id",
                 element: <Filtered/>
