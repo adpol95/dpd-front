@@ -10,7 +10,7 @@ function Main() {
     const [sort, setSort] = useState("");
     for (let i = 1; i < 16; i++) pages.push(i);
     useEffect(() => {
-        fetch("dpdback-gw9gfuby.b4a.run", {
+        fetch("https://dpdback-gw9gfuby.b4a.run", {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             headers: {
                 "Content-Type": "application/json",
