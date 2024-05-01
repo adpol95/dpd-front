@@ -10,7 +10,7 @@ function Filtered() {
     const [input, setInput] = useState("");
     const [check, setCheck] = useState(false);
     useEffect(() => {
-        fetch("http://localhost:5000/filter", {
+        fetch("dpdback-gw9gfuby.b4a.run/filter", {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             headers: {
                 "Content-Type": "application/json",
